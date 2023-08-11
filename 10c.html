@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Fading and Sliding Effects</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $("#b1").click(function(){
+                $("#d1").fadeIn();
+            });
+
+            $("#b2").click(function(){
+                $("#d1").fadeOut();
+            });
+
+            $("#b3").click(function(){
+                $("#d1").fadeToggle();
+            });
+
+            $("#b4").click(function(){
+                $("#d1").fadeTo("slow", 0.5);
+            });
+
+            $("#b5").click(function(){
+                $("#d2").slideDown();
+            });
+
+            $("#b6").click(function(){
+                $("#d2").slideUp();
+            });
+
+            $("#b7").click(function(){
+                $("#d2").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    
+     
+    <br>
+
+    <div id="d1" style="width: 200px; height: 200px; background-color: lightblue; display: none;">
+        
+    </div>
+
+    <br>
+    
+    <div id="d2" style="width: 200px; height: 200px; background-color: lightgreen; display: none; overflow: hidden;">
+        
+    </div>
+
+    <br>
+
+    <button id="b1">Fade In</button>
+    <button id="b2">Fade Out</button>
+    <button id="b3">Fade Toggle</button>
+    <button id="b4">Fade To</button>
+    
+    <button id="b5">Slide Down</button>
+    <button id="b6">Slide Up</button>
+    <button id="b7">Slide Toggle</button>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10b</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#hide").click(function(){
+    $("p").hide();
+  });
+  $(".show").click(function(){
+    $("p").show();
+  });
+  $(".all").click(function(){
+    $("*").hide();
+  });
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+    <div class="d1">
+        <b>hide all</b>
+        <p>hide n show</p>
+        <p>this tag</p>
+        <p>practical</p>
+      </div>
+    
+
+<button id="hide">Hide</button>
+<button class="show">Show</button>
+<button class="all">All</button>
+
+</body>
+</html>

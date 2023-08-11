@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".b1").click(function () {
+                $(".p1").hide("slow", function () {
+                    alert("Hidden");
+                });
+            });
+
+            $("#b2").click(function () {
+                alert($("#p2").text());
+            });
+
+            $("#b3").click(function () {
+                alert($("#p2").html());
+            });
+
+            $("#b4").click(function () {
+                alert($("#i1").val());
+            });
+
+            $("#b5").click(function () {
+                alert($("#a1").attr("href"));
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <p class="p1">i will be hidden</p>
+
+
+    <p id="p2">this is my <b>practical</b> of jquery</p>
+
+    <input type="text" id="i1" value="vandu"></p>
+
+    <a href="10a.html" id="a1">prac10</a><br><br>
+
+    <button class="b1">Hide</button>
+    <button id="b2">text</button>
+    <button id="b3">HTML</button>
+    <button id="b4">Val</button>
+    <button id="b5">href</button>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <script>
+        $("#b1").click(function () {
+            $("ul").append("<li>nandu</li>");
+        });
+        $("#b2").click(function () {
+            $("ul").prepend("<li>srisu</li>");
+        });
+        $("#b3").click(function () {
+            $("ul").before("<p>Hello frnds</p>");
+        });
+        $("#b4").click(function () {
+            $("ul").after("<p>Bye frnds </p>");
+        });
+        $("#b5").click(function () {
+            $("p").remove();
+        });
+        $("#b6").click(function () {
+            $("ul").remove();
+        });
+       
+    </script>
+    
+</head>
+
+<body>
+    <button type="button" id="b1">Append</button>
+    <button type="button" id="b2">Prepend</button>
+    <button type="button" id="b3">Before</button>
+    <button type="button" id="b4">after</button>
+    <button type="button" id="b5">Remove</button>
+    <button type="button" id="b6">Empty</button>
+    
+    
+    <ul>
+        <li>vandu</li>
+        <li>vaidu</li>
+    </ul>
+    
+</body>
+
+</html>

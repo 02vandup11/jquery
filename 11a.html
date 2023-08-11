@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          
+          $("#b1").click(function() {
+            $("#i1").animate({
+              
+              height: "300px",
+              width: "300px",
+              opacity: 0.9
+            }, 500);
+          });
+    
+          // Chaining
+          $("#b2").click(function() {
+            $("#i1")
+              .fadeOut(500)
+              .fadeIn(500)
+              .slideUp(500)
+              .slideDown(500);
+          });
+        });
+      </script>
+      <style>
+       
+      </style>
+    </head>
+    <body>
+      <button id="b1">Animate Image</button>
+      <button id="b2">Chain Effects</button> <br>
+    <br>
+      <img id="i1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkAhvc-YjdwsimlEYdOknxcvbgNOVSHWjkWQ&usqp=CAU" >
+    </body>
+    </html>
